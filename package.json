@@ -1,0 +1,19 @@
+{
+    "name": "page-constructor",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "sass _cdn/scss/:_cdn/css/ --watch --style=compressed"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thimarsola/Page-Contructor.git"
+    },
+    "author": "Thiago Marsola",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/thimarsola/Page-Contructor/issues"
+    },
+    "homepage": "https://github.com/thimarsola/Page-Contructor#readme"
+}

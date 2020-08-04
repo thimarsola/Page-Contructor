@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+
+    font: {
+        size: 16px;
+        family: "Raleway",
+            sans-serif;
+        weight: 300;
+    }
+
+    color: #333;
+
+    span,
+    a,
+    strong {
+        font: {
+            size: inherit;
+            weight: inherit;
+        }
+
+        color: inherit;
+    }
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 1200px;
+    height: 100%;
+    z-index: 1000;
+}

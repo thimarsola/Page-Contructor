@@ -1,0 +1,146 @@
+@import "boot";
+
+#main {
+    width: 100%;
+    height: 100vh;
+
+    background: {
+        image: url('../img/bg-home.jpg');
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    }
+
+    .main_content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main_content_logo {
+            margin-bottom: 2em;
+
+            img {
+                width: auto;
+            }
+        }
+
+        .main_content_header {
+            margin: 0;
+            padding: 0;
+
+            h1 {
+                margin: 0;
+                padding: 0;
+
+                font: {
+                    family: 'Playfair Display',
+                        serif;
+                    size: 5em;
+                    weight: 500;
+                }
+
+                text: {
+                    align: center;
+                }
+
+                color: #fff;
+            }
+        }
+
+        .main_content_text {
+            margin-top: 2em;
+
+            p {
+                margin: 0;
+                padding: 0;
+
+                font: {
+                    size: 1.5em;
+                    weight: 300;
+                }
+
+                text: {
+                    align: center;
+                }
+
+                color: #fff;
+            }
+
+            .main_content_text_img {
+                margin-top: 1.5em;
+                display: flex;
+                justify-content: center;
+            }
+
+            ul {
+                margin-top: 5em;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin: 0;
+                    padding: 0 1em;
+
+                    a {
+                        &:hover {
+                            img {
+                                transform: scale(1.2);
+                                transition: ease-in-out .3s all;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    //BODY
+    * {
+        font-size: 14px;
+    }
+}
+
+// mobile
+@media screen and (max-width: 425px) {
+    #main {
+        .main_content {
+
+            .main_content_header {
+
+                h1 {
+                    font: {
+                        size: 4em;
+                    }
+                }
+            }
+
+            .main_content_text {
+                p {
+                    font: {
+                        size: 1.25em;
+                    }
+                }
+
+                ul {
+                    margin-top: 3em;
+
+                    li {
+                        margin: 0;
+                        padding: 0 .875em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {}
